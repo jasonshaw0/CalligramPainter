@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Calligram Painter</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Jason Shaw - Math Calligram Painter</h1>
+    <h2>Calligrams are words or symbols arranged to form a picture. This website takes that concept and turns it into a paintbrush while also using mathematics instead of English symbols.</h2>
+    
+    <div class="frame">
+      <div class="canvas" id="canvas"></div>
+    </div>
+    
+    <div class="settings">
+      <div class="math-types">
+        <div class="setting-name">Math Type (symbols):</div>
+        <div class="checkbox-columns">
+          <label><input type="checkbox" class="math-type-checkbox" value="greek" checked> Greek Alphabet</label>
+          <label><input type="checkbox" class="math-type-checkbox" value="calculus"> Calculus</label>
+          <label><input type="checkbox" class="math-type-checkbox" value="algebra"> Algebra</label>
+          <label><input type="checkbox" class="math-type-checkbox" value="geometry"> Geometry</label>
+          <label><input type="checkbox" class="math-type-checkbox" value="linear-algebra"> Linear Algebra</label>
+          <label><input type="checkbox" class="math-type-checkbox" value="number-theory"> Number Theory</label>
+        </div>
+      </div>
+      
+      <div class="setting-group">
+        <div class="setting-name">Brush Color:
+          <input type="color" id="color">
+        </div>
+        <button class="button" id="brush-btn">Brush</button>
+        <button class="button" id="eraser-btn">Eraser</button>
+        <button class="button" id="erase-btn">Erase All</button>
+      </div>
+      
+      <div class="setting-group">
+        <div class="setting-name">Brush Size:
+          <input type="range" id="brush-size" min="10" max="40" value="20">
+        </div>
+      </div>
+      
+      <div class="setting-group">
+        <div class="setting-name">Letter Density:
+          <input type="range" id="letter-density" min="1" max="50" value="15">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
